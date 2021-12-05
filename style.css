@@ -1,0 +1,78 @@
+body {
+    background-color: #102CDE;
+}
+
+.glavni-box {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50%;
+    justify-content: center;
+    align-items: center;
+    display: block;
+}
+
+.glavno-odabir {
+    background-color: #4191FE;
+    color: #102CDE;
+    font-size: 2.5rem;
+    border: 1px;
+    border-radius: 10px;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.misicna-grupa-box {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 50%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.podgrupa {
+    margin-top: 50%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.slike-vezbe {
+    width: 100%;
+}
+
+.dugme-plus {
+    background-color: transparent;
+    color: #102CDE;
+    border: 5px solid #102CDE;
+    border-radius: 10px;
+    font-size: 2rem;
+}
+
+input {
+    background-color: #102CDE;
+    color: #4191FE;
+    font-size: 1.7rem;
+    outline: none;
+    border: 2px solid #4191FE;
+    border-radius: 10px;
+}
+
+.ime-treninga {
+    background-color: #4191FE;
+    color: #102CDE;
+    font-size: 3rem;
+    border: 1px;
+    border-radius: 10px;
+    margin-top: 50%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.podgrupa-planovi {
+    justify-content: center;
+    align-items: center;
+    display: none;
+}

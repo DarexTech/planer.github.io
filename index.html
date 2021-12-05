@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="mainjs.js"></script>
+    <title>Training Planner</title>
+</head>
+
+<body>
+    <div class="glavni-box" id="glavnibox">
+        <button onclick="teretana()" class="glavno-odabir" id="teretana">TRENING U TERETANI</button><br />
+        <button onclick="kodkuce()" class="glavno-odabir" id="kodkuce">KUĆNI TRENING</button><br />
+        <button onclick="mojitr()" class="glavno-odabir" id="mojitr">MOJI TRANINZI</button>
+    </div>
+    <div class="misicna-grupa-box" id="misicnaGrupaTrt">
+        <div onclick="nazadMisicnaGrupaTrt()" class="glavno-odabir" id="nazadMisicnaGrupaTrt">Nazad</div>
+        <button onclick="stomak()" class="glavno-odabir" id="stomakTrt">STOMAK</button><br />
+        <button onclick="ruke()" class="glavno-odabir" id="ruke">RUKE</button><br />
+        <button onclick="leđa()" class="glavno-odabir" id="leđa">LEĐA</button><br />
+        <button onclick="ramena()" class="glavno-odabir" id="ramena">RAMENA</button><br />
+        <button onclick="noge()" class="glavno-odabir" id="noge">NOGE</button>
+    </div>
+    <div class="misicna-grupa-box" id="misicnaGrupaKuca">
+        <div onclick="nazadMisicnaGrupaKuca()" class="glavno-odabir" id="nazadMisicnaGrupaKuca">Nazad</div>
+        <button onclick="stomakkuca()" class="glavno-odabir" id="stomakKuca">STOMAK</button><br />
+        <button onclick="rukekuca()" class="glavno-odabir" id="rukeKuca">RUKE</button><br />
+        <button onclick="leđakuca()" class="glavno-odabir" id="leđaKuca">LEĐA</button><br />
+        <button onclick="ramenakuca()" class="glavno-odabir" id="ramenaKuca">RAMENA</button><br />
+        <button onclick="nogekuca()" class="glavno-odabir" id="nogeKuca">NOGE</button>
+    </div>
+    <div class="podgrupa" id="podgrupaRukeKuca">
+        <div onclick="nazadpodgruparukekuca()" class="glavno-odabir" id="nazadPodgrupaRukeKuca">Nazad</div>
+        <div class="glavno-odabir" id="ruke1Kuca">ruke1Kuca</div>
+        <div class="glavno-odabir" id="ruke2Kuca">ruke2Kuca</div>
+    </div>
+    <div class="podgrupa" id="podgrupaLedaKuca">
+        <div onclick="nazadpodgrupaledakuca()" class="glavno-odabir" id="nazadPodgrupaLedaKuca">Nazad</div>
+        <div class="glavno-odabir" id="leda1Kuca">leda1Kuca</div>
+        <div class="glavno-odabir" id="leda2Kuca">leda2Kuca</div>
+    </div>
+    <div class="podgrupa" id="podgrupaStomakKuca">
+        <div onclick="nazadpodgrupastomakkuca()" class="glavno-odabir" id="nazadPodgrupaStomakKuca">Nazad</div>
+        <div class="glavno-odabir" id="stomak1Kuca">stomak1Kuca</div>
+        <div class="glavno-odabir" id="stomak2Kuca">stomak2Kuca</div>
+    </div>
+    <div class="podgrupa" id="podgrupaRamenaKuca">
+        <div onclick="nazadpodgruparamenakuca()" class="glavno-odabir" id="nazadPodgrupaRamenaKuca">Nazad</div>
+        <div class="glavno-odabir" id="ramena1Kuca">ramena1Kuca</div>
+        <div class="glavno-odabir" id="ramena2Kuca">ramena2Kuca</div>
+    </div>
+    <div class="podgrupa" id="podgrupaNogeKuca">
+        <div onclick="nazadpodgrupanogekuca()" class="glavno-odabir" id="nazadPodgrupaNogeKuca">Nazad</div>
+        <div class="glavno-odabir" id="noge1Kuca">noge1Kuca</div>
+        <div class="glavno-odabir" id="noge2Kuca">noge2Kuca</div>
+    </div>
+    <div class="ime-treninga" id="imeTreninga">
+        <div class="glavno-odabir" id="podgrupa">Ime treninga<input autocomplete="off" id="inputTrt" type="text"><button onclick="dodajtrtrt()" class="dugme-plus" id="">+</button></div>
+    </div>
+    <div class="misicna-grupa-box" id="misicnaGrupaTrtPlus">
+        <div class="glavno-odabir" id="nazadMisicnaGrupaTrtPlus">Nazad</div>
+        <button onclick="stomakplus()" class="glavno-odabir" id="stomakTrtPlus">STOMAK</button><br />
+        <button onclick="rukeplus()" class="glavno-odabir" id="rukeTrtPlus">RUKE</button><br />
+        <button onclick="ledaplus()" class="glavno-odabir" id="ledaTrtPlus">LEĐA</button><br />
+        <button onclick="ramenaplus()" class="glavno-odabir" id="ramenaTrtPlus">RAMENA</button><br />
+        <button onclick="nogeplus()" class="glavno-odabir" id="nogeTrtPlus">NOGE</button>
+        <div class="glavno-odabir" id="zavrsiMisicnaGrupaTrtPlus">Završi</div>
+    </div>
+    <div class="misicna-grupa-box" id="misicnaGrupaKucaPlus">
+        <div class="glavno-odabir" id="nazadMisicnaGrupaKucaPlus">Nazad</div>
+        <button onclick="stomakkucaplus()" class="glavno-odabir" id="stomakKucaPlus">STOMAK</button><br />
+        <button onclick="rukekucaplus()" class="glavno-odabir" id="rukeKucaPlus">RUKE</button><br />
+        <button onclick="ledakucaplus()" class="glavno-odabir" id="ledaKucaPlus">LEĐA</button><br />
+        <button onclick="ramenakucaplus()" class="glavno-odabir" id="ramenaKucaPlus">RAMENA</button><br />
+        <button onclick="nogekucaplus()" class="glavno-odabir" id="nogeKucaPlus">NOGE</button>
+        <div class="glavno-odabir" id="zavrsiMisicnaGrupaKucaPlus">Završi</div>
+    </div>
+    <div class="podgrupa" id="podgrupaRukeTrt">
+        <div onclick="nazadpodgruparuketrt()" class="glavno-odabir" id="nazadPodgrupaRukeTrt">Nazad</div>
+        <div class="glavno-odabir" id="ruke1">ruke1</div>
+        <div class="glavno-odabir" id="ruke2">ruke2</div>
+    </div>
+    <div class="podgrupa" id="podgrupaLedaTrt">
+        <div onclick="nazadpodgrupaledatrt()" class="glavno-odabir" id="nazadPodgrupaLedaTrt">Nazad</div>
+        <div class="glavno-odabir" id="leda1">leda1</div>
+        <div class="glavno-odabir" id="leda2">leda2</div>
+    </div>
+    <div class="podgrupa" id="podgrupaStomakTrt">
+        <div onclick="nazadpodgrupastomaktrt()" class="glavno-odabir" id="nazadPodgrupaStomakTrt">Nazad</div>
+        <div class="glavno-odabir" id="stomak1">stomak1</div>
+        <div class="glavno-odabir" id="stomak2">stomak2</div>
+    </div>
+    <div class="podgrupa" id="podgrupaRamenaTrt">
+        <div onclick="nazadpodgruparamenatrt()" class="glavno-odabir" id="nazadPodgrupaRamenaTrt">Nazad</div>
+        <div class="glavno-odabir" id="ramena1">ramena1</div>
+        <div class="glavno-odabir" id="ramena2">ramena2</div>
+    </div>
+    <div class="podgrupa" id="podgrupaNogeTrt">
+        <div onclick="nazadpodgrupanogetrt()" class="glavno-odabir" id="nazadPodgrupaNogeTrt">Nazad</div>
+        <div class="glavno-odabir" id="noge1">noge1</div>
+        <div class="glavno-odabir" id="noge2">noge2</div>
+    </div>
+    <div class="podgrupa" id="podgrupaStomakTrtPlus">
+        <div class="glavno-odabir" id="nazadStomakGrupePlusTrt">Nazad</div>
+        <div class="glavno-odabir" id="stomak1Plus">stomak1 <button class="dugme-plus" id="dugmeStomak1Plus">+</button></div>
+        <div class="glavno-odabir" id="stomak2Plus">stomak2 <button class="dugme-plus" id="dugmeStomak2Plus">+</button></div>
+    </div>
+    <div class="podgrupa" id="podgrupaRukeTrtPlus">
+        <div class="glavno-odabir" id="nazadRukeGrupePlusTrt">Nazad</div>
+        <div class="glavno-odabir" id="ruke1Plus">ruke1 <button class="dugme-plus" id="dugmeRuke1Plus">+</button></div>
+        <div class="glavno-odabir" id="ruke2Plus">ruke2 <button class="dugme-plus" id="dugmeRuke2Plus">+</button></div>
+    </div>
+    <div class="podgrupa" id="podgrupaLedaTrtPlus">
+        <div class="glavno-odabir" id="nazadLedaGrupePlusTrt">Nazad</div>
+        <div class="glavno-odabir" id="leda1Plus">leda1 <button class="dugme-plus" id="dugmeLeda1Plus">+</button></div>
+        <div class="glavno-odabir" id="leda2Plus">leda2 <button class="dugme-plus" id="dugmeLeda2Plus">+</button></div>
+    </div>
+    <div class="podgrupa" id="podgrupaRamenaTrtPlus">
+        <div class="glavno-odabir" id="nazadRamenaGrupePlusTrt">Nazad</div>
+        <div class="glavno-odabir" id="ramena1Plus">ramena1 <button class="dugme-plus" id="dugmeRamena1Plus">+</button></div>
+        <div class="glavno-odabir" id="ramena2Plus">ramena2 <button class="dugme-plus" id="dugmeRamena2Plus">+</button></div>
+    </div>
+    <div class="podgrupa" id="podgrupaNogeTrtPlus">
+        <div class="glavno-odabir" id="nazadNogeGrupePlusTrt">Nazad</div>
+        <div class="glavno-odabir" id="noge1Plus">noge1 <button class="dugme-plus" id="dugmeNoge1Plus">+</button></div>
+        <div class="glavno-odabir" id="noge2Plus">noge2 <button class="dugme-plus" id="dugmeNoge2Plus">+</button></div>
+    </div>
+    <div class="podgrupa" id="podgrupaStomakKucaPlus">
+        <div class="glavno-odabir" id="nazadStomakGrupePlusKuca">Nazad</div>
+        <div class="glavno-odabir" id="stomak1PlusKuca">stomak1 <button class="dugme-plus" id="dugmeStomak1PlusKuca">+</button></div>
+        <div class="glavno-odabir" id="stomak2PlusKuca">stomak2 <button class="dugme-plus" id="dugmeStomak2PlusKuca">+</button></div>
+    </div>
+    <div class="podgrupa" id="podgrupaRukeKucaPlus">
+        <div class="glavno-odabir" id="nazadRukeGrupePlusKuca">Nazad</div>
+        <div class="glavno-odabir" id="ruke1PlusKuca">ruke1 <button class="dugme-plus" id="dugmeRuke1PlusKuca">+</button></div>
+        <div class="glavno-odabir" id="ruke2PlusKuca">ruke2 <button class="dugme-plus" id="dugmeRuke2PlusKuca">+</button></div>
+    </div>
+    <div class="podgrupa" id="podgrupaLedaKucaPlus">
+        <div class="glavno-odabir" id="nazadLedaGrupePlusKuca">Nazad</div>
+        <div class="glavno-odabir" id="leda1PlusKuca">leda1 <button class="dugme-plus" id="dugmeLeda1PlusKuca">+</button></div>
+        <div class="glavno-odabir" id="leda2PlusKuca">leda2 <button class="dugme-plus" id="dugmeLeda2PlusKuca">+</button></div>
+    </div>
+    <div class="podgrupa" id="podgrupaRamenaKucaPlus">
+        <div class="glavno-odabir" id="nazadRamenaGrupePlusKuca">Nazad</div>
+        <div class="glavno-odabir" id="ramena1PlusKuca">ramena1 <button class="dugme-plus" id="dugmeRamena1PlusKuca">+</button></div>
+        <div class="glavno-odabir" id="ramena2PlusKuca">ramena2 <button class="dugme-plus" id="dugmeRamena2PlusKuca">+</button></div>
+    </div>
+    <div class="podgrupa" id="podgrupaNogeKucaPlus">
+        <div class="glavno-odabir" id="nazadNogeGrupePlusKuca">Nazad</div>
+        <div class="glavno-odabir" id="noge1PlusKuca">noge1 <button class="dugme-plus" id="dugmeNoge1PlusKuca">+</button></div>
+        <div class="glavno-odabir" id="noge2PlusKuca">noge2 <button class="dugme-plus" id="dugmeNoge2PlusKuca">+</button></div>
+    </div>
+    <div class="podgrupa" id="trPlanovi">
+        <div onclick="nazadtrplanovi()" class="glavno-odabir" id="nazadTrPlanovi">Nazad</div>
+        <div onclick="novagrupa()" class="glavno-odabir" id="napraviTrPlus">Napravite plan treninga</div>
+        <div onclick="mojiplanovi()" class="glavno-odabir">
+            Moji planovi treninga
+        </div>
+    </div>
+    <div class="misicna-grupa-box" id="trPlanoviMesto">
+        <button onclick="trplantrt()" class="glavno-odabir" id="teretanaPlus">TRENING U TERETANI</button><br />
+        <button onclick="trplankuca()" class="glavno-odabir" id="kucaPlus">KUĆNI TRENING</button>
+    </div>
+    <div class="podgrupa-planovi" id="mojiPlanovi">
+        <div onclick="nazadmojiplanovi()" class="glavno-odabir" id="nazadMojiPlanovi">Nazad</div>
+    </div>
+</body>
+
+</html>
