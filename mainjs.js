@@ -238,6 +238,14 @@ function dodajtrtrt() {
     var txtPlana = document.createTextNode(inputTrt)
     noviPlanDiv.appendChild(txtPlana)
     noviPlanDiv.className = "glavno-odabir"
+    var kanta = document.createElement('button')
+    kanta.className = 'dugme-obrisi'
+    noviPlanDiv.appendChild(kanta)
+    var kantaTxt = document.createTextNode('Obriši')
+    kanta.appendChild(kantaTxt)
+    kanta.onclick = function() {
+        noviPlanDiv.remove()
+    }
     document.getElementById('imeTreninga').style.display = 'none'
     document.getElementById('trPlanoviMesto').style.display = 'block'
     var dugmeStomak2 = document.getElementById('dugmeStomak2Plus')

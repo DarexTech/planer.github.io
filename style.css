@@ -80,3 +80,13 @@ input {
 .slike {
     width: 160px;
 }
+
+.dugme-obrisi {
+    display: flex;
+    float: right;
+    background-color: #102CDE;
+    color: #4191FE;
+    border: 3px solid #4191FE;
+    border-radius: 10px;
+    font-size: 2rem;
+}
