@@ -76,3 +76,7 @@ input {
     align-items: center;
     display: none;
 }
+
+.slike {
+    width: 160px;
+}

@@ -209,6 +209,11 @@ function dodajtrtrt() {
     document.getElementById('dugmeRamena2Plus').style.display = 'block'
     document.getElementById('dugmeRamena1Plus').style.display = 'block'
     document.getElementById('dugmeNoge2Plus').style.display = 'block'
+    document.getElementById('dugmeNoge3Plus').style.display = 'block'
+    document.getElementById('dugmeNoge4Plus').style.display = 'block'
+    document.getElementById('dugmeNoge5Plus').style.display = 'block'
+    document.getElementById('dugmeNoge6Plus').style.display = 'block'
+    document.getElementById('dugmeNoge7Plus').style.display = 'block'
     document.getElementById('dugmeNoge1Plus').style.display = 'block'
     document.getElementById('dugmeLeda1Plus').style.display = 'block'
     document.getElementById('dugmeLeda2Plus').style.display = 'block'
@@ -295,7 +300,7 @@ function dodajtrtrt() {
     dugmeRukeKuca1.onclick = function() {
         document.getElementById('dugmeRuke1PlusKuca').style.display = 'none'
         var ruke1Kuca = document.getElementById('ruke1Kuca')
-        ruke1KucaClone = ruke1.cloneNode(true)
+        ruke1KucaClone = ruke1Kuca.cloneNode(true)
         ruke1Kuca.after(ruke1KucaClone)
         noviPlanDiv.appendChild(ruke1Kuca)
     }
@@ -336,7 +341,7 @@ function dodajtrtrt() {
         document.getElementById('dugmeRamena2Plus').style.display = 'none'
         var ramena2 = document.getElementById('ramena2')
         ramena2Clone = ramena2.cloneNode(true)
-        ramena2.after(ramena2KucaClone)
+        ramena2.after(ramena2Clone)
         noviPlanDiv.appendChild(ramena2)
     }
     var dugmeRamenaKuca2 = document.getElementById('dugmeRamena2PlusKuca')
@@ -352,7 +357,7 @@ function dodajtrtrt() {
         document.getElementById('dugmeRamena1Plus').style.display = 'none'
         var ramena1 = document.getElementById('ramena1')
         ramena1Clone = ramena1.cloneNode(true)
-        ramena1.after(ramena1KucaClone)
+        ramena1.after(ramena1Clone)
         noviPlanDiv.appendChild(ramena1)
     }
     var dugmeRamenaKuca1 = document.getElementById('dugmeRamena1PlusKuca')
@@ -368,8 +373,48 @@ function dodajtrtrt() {
         document.getElementById('dugmeNoge2Plus').style.display = 'none'
         var noge2 = document.getElementById('noge2')
         noge2Clone = noge2.cloneNode(true)
-        noge2.after(noge2KucaClone)
+        noge2.after(noge2Clone)
         noviPlanDiv.appendChild(noge2)
+    }
+    var dugmeNoge3 = document.getElementById('dugmeNoge3Plus')
+    dugmeNoge3.onclick = function() {
+        document.getElementById('dugmeNoge3Plus').style.display = 'none'
+        var noge3 = document.getElementById('noge3')
+        noge3Clone = noge3.cloneNode(true)
+        noge3.after(noge3Clone)
+        noviPlanDiv.appendChild(noge3)
+    }
+    var dugmeNoge4 = document.getElementById('dugmeNoge4Plus')
+    dugmeNoge4.onclick = function() {
+        document.getElementById('dugmeNoge4Plus').style.display = 'none'
+        var noge4 = document.getElementById('noge4')
+        noge4Clone = noge4.cloneNode(true)
+        noge4.after(noge4Clone)
+        noviPlanDiv.appendChild(noge4)
+    }
+    var dugmeNoge5 = document.getElementById('dugmeNoge5Plus')
+    dugmeNoge5.onclick = function() {
+        document.getElementById('dugmeNoge5Plus').style.display = 'none'
+        var noge5 = document.getElementById('noge5')
+        noge5Clone = noge5.cloneNode(true)
+        noge5.after(noge5Clone)
+        noviPlanDiv.appendChild(noge5)
+    }
+    var dugmeNoge6 = document.getElementById('dugmeNoge6Plus')
+    dugmeNoge6.onclick = function() {
+        document.getElementById('dugmeNoge6Plus').style.display = 'none'
+        var noge6 = document.getElementById('noge6')
+        noge6Clone = noge6.cloneNode(true)
+        noge6.after(noge6Clone)
+        noviPlanDiv.appendChild(noge6)
+    }
+    var dugmeNoge7 = document.getElementById('dugmeNoge7Plus')
+    dugmeNoge7.onclick = function() {
+        document.getElementById('dugmeNoge7Plus').style.display = 'none'
+        var noge7 = document.getElementById('noge7')
+        noge7Clone = noge7.cloneNode(true)
+        noge7.after(noge7Clone)
+        noviPlanDiv.appendChild(noge7)
     }
     var dugmeNogeKuca2 = document.getElementById('dugmeNoge2PlusKuca')
     dugmeNogeKuca2.onclick = function() {
@@ -386,6 +431,46 @@ function dodajtrtrt() {
         noge1Clone = noge1.cloneNode(true)
         noge1.after(noge1Clone)
         noviPlanDiv.appendChild(noge1)
+    }
+    var dugmeNoge3 = document.getElementById('dugmeNoge3Plus')
+    dugmeNoge3.onclick = function() {
+        document.getElementById('dugmeNoge3Plus').style.display = 'none'
+        var noge3 = document.getElementById('noge3')
+        noge3Clone = noge3.cloneNode(true)
+        noge3.after(noge3Clone)
+        noviPlanDiv.appendChild(noge3)
+    }
+    var dugmeNoge4 = document.getElementById('dugmeNoge4Plus')
+    dugmeNoge4.onclick = function() {
+        document.getElementById('dugmeNoge4Plus').style.display = 'none'
+        var noge4 = document.getElementById('noge4')
+        noge4Clone = noge4.cloneNode(true)
+        noge4.after(noge4Clone)
+        noviPlanDiv.appendChild(noge4)
+    }
+    var dugmeNoge5 = document.getElementById('dugmeNoge5Plus')
+    dugmeNoge5.onclick = function() {
+        document.getElementById('dugmeNoge5Plus').style.display = 'none'
+        var noge5 = document.getElementById('noge5')
+        noge5Clone = noge5.cloneNode(true)
+        noge5.after(noge5Clone)
+        noviPlanDiv.appendChild(noge5)
+    }
+    var dugmeNoge6 = document.getElementById('dugmeNoge6Plus')
+    dugmeNoge6.onclick = function() {
+        document.getElementById('dugmeNoge6Plus').style.display = 'none'
+        var noge6 = document.getElementById('noge6')
+        noge6Clone = noge6.cloneNode(true)
+        noge6.after(noge6Clone)
+        noviPlanDiv.appendChild(noge6)
+    }
+    var dugmeNoge7 = document.getElementById('dugmeNoge7Plus')
+    dugmeNoge7.onclick = function() {
+        document.getElementById('dugmeNoge7Plus').style.display = 'none'
+        var noge7 = document.getElementById('noge7')
+        noge7Clone = noge7.cloneNode(true)
+        noge7.after(noge7Clone)
+        noviPlanDiv.appendChild(noge7)
     }
     var dugmeNogeKuca1 = document.getElementById('dugmeNoge1PlusKuca')
     dugmeNogeKuca1.onclick = function() {
