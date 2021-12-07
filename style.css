@@ -92,3 +92,11 @@ input {
     border-radius: 10px;
     font-size: 2rem;
 }
+
+.dodaj-tr {
+    background-color: transparent;
+    color: #102CDE;
+    border: 5px solid #102CDE;
+    border-radius: 10px;
+    font-size: 2rem;
+}
