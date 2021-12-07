@@ -14,7 +14,7 @@ body {
 .glavno-odabir {
     background-color: #4191FE;
     color: #102CDE;
-    font-size: 2.5rem;
+    font-size: 2rem;
     border: 1px;
     border-radius: 10px;
     margin-top: 10%;
@@ -43,9 +43,11 @@ body {
 }
 
 .dugme-plus {
-    background-color: transparent;
-    color: #102CDE;
-    border: 5px solid #102CDE;
+    display: flex;
+    float: right;
+    background-color: #102CDE;
+    color: #4191FE;
+    border: 3px solid #4191FE;
     border-radius: 10px;
     font-size: 2rem;
 }
@@ -62,7 +64,7 @@ input {
 .ime-treninga {
     background-color: #4191FE;
     color: #102CDE;
-    font-size: 3rem;
+    font-size: 2rem;
     border: 1px;
     border-radius: 10px;
     margin-top: 50%;
